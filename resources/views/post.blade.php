@@ -3,9 +3,9 @@
 @section('contain')
 
 <article>
-    <h3> {{$post["title"]}}</h3>
-    <h5>{{$post["author"]}}</h5>
-    <p>{{$post["body"]}}</p>
+    <h1 class="mb-5"> {{$post->title}}</h1>
+
+    <p>{!!$post->body!!}</p>
 
 <a href="/posts">back to post</a>
 </article>
